@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div>
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label class="gh">username</label>
+    <br>
+    <input type="text" #refName class="form-control" formControlName="username">
+    <div *ngIf="userForm.controls['username'].hasError('required')" class="alert alert-danger">username</div>
+  </div>
+  <br>
+  <div class="form-group">
+    <label class="gh">password</label>
+    <br>
+    <input type="password" #refName class="form-control" formControlName="password">
+    <div *ngIf="userForm.controls['password'].hasError('required')" class="alert alert-danger">password</div>
+  </div>
+  <br>
+  <button type="submit"  [disabled]="!userForm.valid" class="w3-btn w3-black" >submit</button>
+</form>
+</div>
+<hr>
+<h3 style="text-align: center;"><b>or</b></h3>
+
+<hr>
+<div>
+  <h2 style="text-align: center;"><b>SIGN UP WITH SOCIAL ACCOUNTS</b></h2>
+  <br>
+
+  <div class="cvb">
+    <div class="col">
+      <a href="http://oauth.9lessons.info/login_with_facebook.php" target="_blank" class="oo">
+        <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+      </a>
+      <br>
+      <br>
+      <a href="http://oauth.9lessons.info/login_with_linkedin.php"  class="kk">
+        <i class="fa fa-linkedin fa-fw"></i> Login with linkedin
+      </a><br>
+      <br>
+      <a href="http://oauth.9lessons.info/login_with_google.php" target="_blank"  class="jk">
+        <i class="fa fa-google fa-fw"></i> Login with G-mail
+      </a>
+      <br>
+      <br>
+    </div>
+  </div>
+
+
+</div>

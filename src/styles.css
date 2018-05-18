@@ -1,0 +1,49 @@
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+.qwert{
+  height: 700px;
+}
+.form-control {
+  width: 400px;
+  height: 47px;
+  background-color: black;
+  color: white;
+}
+.oo{
+  height: 95px;
+  width: 400px;
+  background-color: #336699;
+  color: white;
+  font-size: 16px;
+}
+a{
+  text-decoration: none;
+}
+.jk{
+  height: 95px;
+  width: 400px;
+  background-color: coral;
+  color: white;
+  font-size: 16px;
+}
+.kk{
+  height: 95px;
+  width: 400px;
+  background-color: greenyellow;
+  color: white;
+  font-size: 16px;
+}
+.col{
+  text-align: center;
+}
+.cvb{
+  text-align: center;
+}
+.ert{
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+}
